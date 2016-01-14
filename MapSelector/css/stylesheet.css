@@ -1,26 +1,77 @@
-﻿html, body{
-    width:100%;
-    height:100%;
-    margin:0;
-    padding:0;
-}
-
-.map{
-    display:inline-block;
-    width:100%;
-    float:left;
-    height:519px;
+﻿html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 img{
-    height:100%;
     width:auto;
+    height:100%;
     float:left;
+    padding:0;
+    margin:0;
 }
 
-.map-part{
-    width:auto;
-    height:auto;
-    float:left;
+.map {
+    position: absolute;
+    width: auto;
+    float: left;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.americas, .africa, .asia, .europe, .saudi{
+    position: absolute;
+    width: auto;
+    cursor:pointer;
+}
+
+.americas img, .africa img, .asia img, .europe img, .saudi img{
+    opacity:0;
+}
+
+.americas img:hover, .africa img:hover, .asia img:hover, .europe img:hover, .saudi img:hover{
+    opacity:100;
+}
+
+.americas {
+    float: left;
+    height: 89.5%;
+    bottom:3.75%;
+    z-index:1;
+    left:4%;
+}
+
+.africa {
+    float: right;
+    height: 70.5%;
     bottom:0;
+    right:0;
+    z-index:2;
+}
+
+.europe {
+    float: right;
+    height: 27.2%;
+    top:8.4%;
+    right:39.75%;
+    z-index:4;
+}
+
+.saudi {
+    float: right;
+    height: 20%;
+    top:31%;
+    right:38.35%;
+    z-index:5;
+}
+
+.asia {
+    float: right;
+    height: 82%;
+    bottom:9.7%;
+    right:6.15%;
+    z-index:3;
 }
